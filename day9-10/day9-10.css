@@ -1,0 +1,160 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 96%;
+  height: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.upperbox,
+.bottombox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3%;
+  background-color: white;
+  color: tomato;
+  overflow: hidden;
+  border: 2px solid tomato;
+  z-index: 3;
+}
+.upperbox {
+  position: fixed;
+  top: 0;
+}
+.bottombox {
+  position: fixed;
+  bottom: 0;
+}
+.leftbox {
+  display: flex;
+  height: 100%;
+  width: 32px;
+  background-color: white;
+  color: tomato;
+  position: fixed;
+  left: 0;
+  border: 2px solid tomato;
+  z-index: 2;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.leftbox_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 47%;
+  border: 2px solid tomato;
+
+  background-color: tomato;
+  color: white;
+}
+
+.leftbox_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  border: 0px;
+}
+.snsbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  border-top: 2px solid tomato;
+}
+.snsbox i {
+  margin: 10px 0px;
+}
+.rightbox {
+  display: flex;
+  position: fixed;
+  right: 0;
+  background-color: seagreen;
+  color: white;
+  border: 2px solid tomato;
+  z-index: 2;
+  height: 100%;
+  width: 32px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  align-items: center;
+}
+.rightbox_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 50%;
+  border: 2px solid tomato;
+  border-bottom: 0px;
+}
+.rightbox_2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid tomato;
+}
+.imgbox_1,
+.imgbox_2 {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.imgbox_1 img {
+  height: 100%;
+  width: 100%;
+}
+.imgbox_2 img {
+  height: 100%;
+  width: 100%;
+}
+.currybox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 4;
+  font-size: 50px;
+  color: white;
+}
+
+.talkbox {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 4;
+  background-color: tomato;
+  color: white;
+  bottom: 4%;
+  right: 4%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
