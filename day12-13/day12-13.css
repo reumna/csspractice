@@ -7,55 +7,98 @@ body {
   height: 100vh;
   display: flex;
 }
-
+* {
+  box-sizing: border-box;
+}
 h4 {
   font-size: 24px;
 }
-.orangeside {
+.orangebg {
   width: 65%;
   height: 120vh;
+  padding: 10px 20px 10px 10px;
+  margin-right: 35%;
 
   background-color: orange;
+}
+.orangeside {
+  width: 100%;
+  height: 100%;
   color: red;
   display: grid;
-  grid-template-columns: 30px auto 100px;
-  grid-template-rows: repeat(auto-fit, 1fr);
+
+  grid-template-rows: repeat(auto-fit, 2fr);
 }
 .orangeside h1 {
   font-size: 50px;
 }
 .orangeside h2 {
-  font-size: 19px;
+  font-size: 17px;
 }
 .orangecontent {
-  grid-row: span 2;
-  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 40px auto 200px;
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px solid red;
 }
 .orangecontent__head {
-}
-.orangecontent__head h2 {
-  text-orientation: sideways-lr;
-}
-.orangecontent__title {
-}
-.orangecontent__content {
-}
-.orangecontent__field {
-}
-.orangeyear {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-row: span 2;
+  border: 1px solid red;
+}
+.orangecontent__head h2 {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+.orangecontent__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-row: span 2;
+  border: 1px solid red;
+  padding-left: 5px;
+}
+.orangecontent__content {
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.orangefield {
+  grid-row: 1/-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.orangefield h2 {
+  font-size: 12px;
+}
+
+.orangeyear {
+  grid-row: 2/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
 }
 .orangeyearbg {
   background-color: red;
   color: orange;
   display: flex;
+  width: 80%;
+  height: 60%;
   justify-content: center;
   align-items: center;
   border-radius: 15%;
 }
-.selected {
+.selected,
+.selected .orangeyear,
+.selected .orangefield,
+.selected .orangecontent__title,
+.selected .orangecontent__head {
   color: white;
   border: 1px solid white;
 }
@@ -66,34 +109,37 @@ h4 {
 .divide {
   width: 5%;
   height: 100%;
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  right: 30%;
+  font-size: 19px;
 }
 
 .pinkside {
   background-color: pink;
   width: 100%;
   height: 50%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 25px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
 }
-.pinkside h4 {
-  text-orientation: sideways-rl;
-}
-.blackcircle {
-  position: absolute;
-  top: 47%;
-  left: 65%;
-  width: 4%;
-  height: 7%;
-  border-radius: 50%;
-  background-color: black;
-  z-index: 3;
-}
+
 .blueside {
   background-color: blue;
   width: 100%;
   height: 50%;
-  writing-mode: sideways-lr;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.blueside h4 {
+  transform: rotate(180deg);
 }
 .redside {
   background-color: red;
@@ -118,8 +164,7 @@ h4 {
 .red__team {
   justify-self: start;
 }
-.red__press {
-}
+
 .redheader__circle {
   width: 15px;
   height: 15px;
