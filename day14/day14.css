@@ -1,0 +1,146 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+div {
+  border: 1px solid black;
+  background-size: cover;
+}
+h2 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+h3 {
+  font-weight: 600;
+  margin-left: 10px;
+}
+.a1office {
+  grid-row: span 10;
+  grid-column: 1/3;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  border: none;
+  margin: 10px 0px 40px 10px;
+}
+
+.list__home {
+  background-color: wheat;
+  border-top: 1px solid black;
+}
+ul {
+  margin: 30px 0px 30px 0px;
+}
+li {
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+}
+.a1__detail {
+  border: none;
+}
+.language {
+  border: none;
+  margin-left: 10px;
+  justify-self: flex-end;
+  margin-bottom: 10px;
+}
+
+span {
+  display: block;
+  margin-left: 10px;
+}
+p {
+  margin-left: 10px;
+}
+
+.home {
+  grid-row: span 8;
+  grid-column: 3/6;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.home h2 {
+  width: 50%;
+  margin-bottom: 50px;
+}
+.home p {
+  margin: 10px 20px 10px 10px;
+}
+.services {
+  grid-row: span 2 / -1;
+  grid-column: 3/6;
+  display: flex;
+  flex-direction: column;
+}
+.services h2 {
+  width: 75%;
+  margin-top: 30px;
+}
+.img_xl {
+  grid-row: span 8;
+  grid-column: 6/9;
+  object-fit: cover;
+  background-image: url("http://m.joygagu.co.kr/_dj/img/main_section_1_img2.jpg");
+}
+.img_l {
+  grid-row: span 4;
+  grid-column: 9/-1;
+  background-image: url("https://t1.daumcdn.net/cfile/tistory/191CC60C4CD3EA210C");
+}
+.img_m1 {
+  grid-row: 5 / span 2;
+  grid-column: 9 / span 2;
+  background-image: url("https://lh3.googleusercontent.com/proxy/Q0SM6fPgeb7fIVC6pzyJUJZIKCkFB7zvhopqlgzygIoJ7vfKy07TOcgjngtrESxCoygYHkfm0wj-oOO3xxIiZPiLAPC88J6Nibq17H5OKfvJ-NjOyyhu");
+}
+.img_xs1 {
+  grid-row: 5 / span 1;
+  grid-column: span 1 / -1;
+  background-image: url("https://cdn.imweb.me/thumbnail/20201125/0da0b8b2e905d.jpg");
+}
+.img_xs2 {
+  grid-row: 6 / span 1;
+  grid-column: span 1 / -1;
+  background-image: url("https://dt40dm21pj8em.cloudfront.net/uploads/froala/file/9252/%EA%B0%80%EA%B5%AC%EB%94%94%EC%9E%90%EC%9D%B8%201.jpg");
+}
+.img_s1 {
+  grid-row: 7 / span 2;
+  grid-column: 9 / span 1;
+  background-image: url("https://www.gaguroad.com/web/product/big/20200311/8b7970ccce26338996d3272fd4f1cc6d.jpg");
+}
+.img_m2 {
+  grid-row: 7 / span 2;
+  grid-column: span 2 / -1;
+  background-image: url("http://www.gven.co.kr/design/gven/10276/main/mm2.jpg");
+}
+.img_s2 {
+  grid-row: span 2 / -1;
+  grid-column: 6 / span 1;
+  background-image: url("http://www.sangdogagu.co.kr/shopimages/sangdogagu/0660010002792.jpg?1630286273");
+}
+.img_xs3 {
+  grid-row: span 1 / -2;
+  grid-column: 7 / span 1;
+  background-image: url("https://img.maisonkorea.com/2020/11/msk_5fac9c8dde5fb.jpg");
+}
+.img_xs4 {
+  grid-row: span 1 / -1;
+  grid-column: 7 / span 1;
+  background-image: url("http://diyoz.com/web/upload/d12f/main/main1.jpg");
+}
+.img_blueprint {
+  grid-row: span 2 / -1;
+  grid-column: span 4 / -1;
+  background-image: url("https://lh3.googleusercontent.com/proxy/-UHd4-Jh0KhGphjxKVjjod_lowrRPJ2utstfrjiL4mZjdF9vpeuu25epJmAtmmFzjsU4o7FDi_gT-g789Vzd2Lz9Ei0f0oaos80QhL43BuYItMrhZOJUMQk4HF1GPTiCudU0lZPD9JU");
+}
